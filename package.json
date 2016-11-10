@@ -1,0 +1,50 @@
+{
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "description": "Starter project following (I hope) the best practices when using gulp",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build --env=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrincessMadMath/maud-24-quiz.git"
+  },
+  "keywords": [
+    "gulp",
+    "starter"
+  ],
+  "author": "Mathieu Gamache",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrincessMadMath/maud-24-quiz/issues"
+  },
+  "homepage": "https://github.com/PrincessMadMath/maud-24-quiz#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "browser-sync": "^2.17.3",
+    "del": "^2.2.2",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-util": "^3.0.7",
+    "lodash": "^4.16.4",
+    "postcss-reporter": "^1.4.1",
+    "postcss-scss": "^0.3.1",
+    "postcss-sorting": "^1.7.0",
+    "require-dir": "^0.3.1",
+    "stylefmt": "^4.3.1",
+    "stylelint": "^7.5.0",
+    "stylelint-config-standard": "^14.0.0",
+    "undertaker-forward-reference": "^1.0.1"
+  }
+}
