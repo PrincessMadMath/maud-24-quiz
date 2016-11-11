@@ -1,66 +1,66 @@
 var questions = [
     {
         id: '1', 
-        Name:'Question #1', 
-        Question: 'Hum sup?', 
-        Anwser : 'potato',
+        Name:'Conjugaison, accords, orthographe,...', 
+        Question: 'Quel mot dans le dictionnaire est écrit incorrectement', 
+        Anwser : 'incorrectement',
         Link: 'https://www.youtube.com/embed/H7HmzwI67ec',
         GivenAnswer: ''
     },
     {
         id: '2', 
-        Name:'Question #2', 
-        Question: 'Hum sup2?', 
-        Anwser : 'potato2',
-        Link: 'https://www.youtube.com/embed/kxopViU98Xo',
-        GivenAnswer: ''
-    },
-    {
-        id: '3', 
-        Name:'Question #3', 
-        Question: 'Hum sup2?', 
-        Anwser : 'potato2',
+        Name:'Le grand voyageur', 
+        Question: "Qu'est ce qui fait le tour du monde tout en restant dans son coin!", 
+        Anwser : 'timbre',
         Link: 'https://www.youtube.com/embed/OJGUbwVMBeA',
         GivenAnswer: ''
     },
     {
+        id: '3', 
+        Name:"L'histoire du pauvre aveugle", 
+        Question: "Qu'est ce qui a des yeux mains ne peux pas voir?", 
+        Anwser : 'aveugle',
+        Link: 'https://www.youtube.com/embed/kxopViU98Xo',
+        GivenAnswer: ''
+    },
+    {
         id: '4', 
-        Name:'Question #4', 
-        Question: 'Hum sup2?', 
-        Anwser : 'potato2',
+        Name:'Faillite!', 
+        Question: "Un homme pousse son auto le long d'une route lorsqu'il arrête devant un hôtel. Il crie alors 'Je viens de faire faillite'. Pourquoi?", 
+        Anwser : 'monopoly',
         Link: 'https://www.youtube.com/embed/F57P9C4SAW4',
         GivenAnswer: ''
     },
     {
         id: '5', 
-        Name:'Question #5', 
-        Question: 'Hum sup2?', 
-        Anwser : 'potato2',
+        Name:'Un fantome?', 
+        Question: "Je suis plus léger qu'une plume, mais même un troll ne peut me retenir longtemps. Qui suis-je?", 
+        Anwser : 'souffle',
         Link: 'https://www.youtube.com/embed/_r0n9Dv6XnY',
         GivenAnswer: ''
     },
     {
         id: '6', 
-        Name:'Question #6', 
-        Question: 'Hum sup2?', 
-        Anwser : 'potato2',
-        Link: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        Name:'Wut', 
+        Question: 'Je viens de voir un cavalier sauter par dessus une tour et attérir sur un homme qui disparait et je ne suis pas étonné. Pourquoi?', 
+        Anwser : 'échec',
+        Link: 'https://www.youtube.com/embed/t3jKtjgRZQY',
         GivenAnswer: ''
     },
     {
         id: '7', 
-        Name:'Question #7', 
-        Question: 'Hum sup2?', 
-        Anwser : 'potato2',
+        Name:'Les profiteurd', 
+        Question: "Qu'est ce que tu possèdes, mais que ce sont les autres qui l'utilisent plus que toi?", 
+        Anwser : 'nom',
         Link: 'https://www.youtube.com/embed/8uySNTFJMec',
         GivenAnswer: ''
     },
     {
         id: '8', 
-        Name:'Question #8', 
-        Question: 'Hum sup2?', 
-        Anwser : 'potato2',
-        Link: 'https://www.youtube.com/embed/t3jKtjgRZQY',
+        Name:"I don't know that! AAAaaaaaaaaaaahhhhhhh!!", 
+        Question: 'What is the air-speed velocity of an unladen swallow?', 
+        Anwser : "african or european swallow",
+        Link: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
         GivenAnswer: ''
     }
 ];
@@ -112,7 +112,7 @@ function checkAnswer(answer, question, cookie_checking){
 
     if (typeof(cookie_checking)==='undefined') cookie_checking = false;
 
-    if(answer.toLowerCase() == question.Anwser.toLowerCase())
+    if(answer.toLowerCase().indexOf(question.Anwser.toLowerCase()) !== -1)
     {
         //console.log("Good answer " + answer);
 
