@@ -9,7 +9,7 @@ var questions = [
     },
     {
         id: '2', 
-        Name:'Le grand voyageur', 
+        Name:'Le grand voyageur.', 
         Question: "Qu'est ce qui fait le tour du monde tout en restant dans son coin!", 
         Anwser : 'timbre',
         Link: 'https://www.youtube.com/embed/OJGUbwVMBeA',
@@ -17,7 +17,7 @@ var questions = [
     },
     {
         id: '3', 
-        Name:"L'histoire du pauvre aveugle", 
+        Name:"L'histoire du pauvre aveugle.", 
         Question: "Qu'est ce qui a des yeux mains ne peux pas voir?", 
         Anwser : 'aveugle',
         Link: 'https://www.youtube.com/embed/kxopViU98Xo',
@@ -41,7 +41,7 @@ var questions = [
     },
     {
         id: '6', 
-        Name:'Wut', 
+        Name:'Wut?!?!?!', 
         Question: 'Je viens de voir un cavalier sauter par dessus une tour et attérir sur un homme qui disparait et je ne suis pas étonné. Pourquoi?', 
         Anwser : 'échec',
         Link: 'https://www.youtube.com/embed/t3jKtjgRZQY',
@@ -49,7 +49,7 @@ var questions = [
     },
     {
         id: '7', 
-        Name:'Les profiteurd', 
+        Name:'Los profitaros.', 
         Question: "Qu'est ce que tu possèdes, mais que ce sont les autres qui l'utilisent plus que toi?", 
         Anwser : 'nom',
         Link: 'https://www.youtube.com/embed/8uySNTFJMec',
@@ -57,7 +57,7 @@ var questions = [
     },
     {
         id: '8', 
-        Name:"I don't know that! AAAaaaaaaaaaaahhhhhhh!!", 
+        Name:"I don't know that! AAAaaaaaaaaaaahhhhhhh!", 
         Question: 'What is the air-speed velocity of an unladen swallow?', 
         Anwser : "african or european swallow",
         Link: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
