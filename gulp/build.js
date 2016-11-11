@@ -24,7 +24,6 @@ var gulpif = require('gulp-if');
 
 /*************** Task definition ***************/
 
-gulp.task('build:check', gulp.parallel('lint:js', 'lint:style'));
 
 // From superset files (sass, typescript (not implemented)) to files usable by the browser (css, plain js,...)
 gulp.task('build:compile', gulp.series(
@@ -42,7 +41,7 @@ gulp.task('build:build', gulp.series(
 gulp.task('build:post', postBuildConcat);
 
 /*** Tasks to build step-by-step ***/
-gulp.task('build', gulp.series('build:check', 'build:compile', 'build:build', 'build:post'));
+gulp.task('build', gulp.series('build:compile', 'build:build', 'build:post'));
 
 
 gulp.task('clean', gulp.parallel(cleanAsset, cleanBuild));
