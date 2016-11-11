@@ -1,7 +1,38 @@
 $primary-color: #00ECB9;
+$secondary-color: #00816A;
 
 body{
-    background: #00ECB9;
+    background: $primary-color;
     font-family: sans-serif;
     font-weight: 100;
 }
+
+iframe{
+    width: 420px;
+    height: 300px;
+}
+
+h1{
+    text-align: center;
+}
+
+.enigma-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.question{
+    background: $secondary-color;
+    text-align: center;
+
+    p {
+        text-align: left;
+    }
+
+    color: #fff;
+    margin: 10px;
+    width: 420px;
+    height: 400px;
+}
+
