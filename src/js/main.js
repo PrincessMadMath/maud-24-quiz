@@ -12,10 +12,57 @@ var questions = [
         Name:'Question #2', 
         Question: 'Hum sup2?', 
         Anwser : 'potato2',
+        Link: 'https://www.youtube.com/embed/kxopViU98Xo',
+        GivenAnswer: ''
+    },
+    {
+        id: '3', 
+        Name:'Question #3', 
+        Question: 'Hum sup2?', 
+        Anwser : 'potato2',
         Link: 'https://www.youtube.com/embed/OJGUbwVMBeA',
         GivenAnswer: ''
+    },
+    {
+        id: '4', 
+        Name:'Question #4', 
+        Question: 'Hum sup2?', 
+        Anwser : 'potato2',
+        Link: 'https://www.youtube.com/embed/F57P9C4SAW4',
+        GivenAnswer: ''
+    },
+    {
+        id: '5', 
+        Name:'Question #5', 
+        Question: 'Hum sup2?', 
+        Anwser : 'potato2',
+        Link: 'https://www.youtube.com/embed/_r0n9Dv6XnY',
+        GivenAnswer: ''
+    },
+    {
+        id: '6', 
+        Name:'Question #6', 
+        Question: 'Hum sup2?', 
+        Anwser : 'potato2',
+        Link: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        GivenAnswer: ''
+    },
+    {
+        id: '7', 
+        Name:'Question #7', 
+        Question: 'Hum sup2?', 
+        Anwser : 'potato2',
+        Link: 'https://www.youtube.com/embed/8uySNTFJMec',
+        GivenAnswer: ''
+    },
+    {
+        id: '8', 
+        Name:'Question #8', 
+        Question: 'Hum sup2?', 
+        Anwser : 'potato2',
+        Link: 'https://www.youtube.com/embed/t3jKtjgRZQY',
+        GivenAnswer: ''
     }
-
 ];
 
 
@@ -61,11 +108,13 @@ var transforms = {
 }
 
 // Unlock link if answered correctly
-function checkAnswer(answer, question){
+function checkAnswer(answer, question, cookie_checking){
+
+    if (typeof(cookie_checking)==='undefined') cookie_checking = false;
 
     if(answer.toLowerCase() == question.Anwser.toLowerCase())
     {
-        console.log("Good answer " + answer);
+        //console.log("Good answer " + answer);
 
         question.GivenAnswer = answer;
         document.cookie =  JSON.stringify(cookie);
@@ -79,15 +128,16 @@ function checkAnswer(answer, question){
          $('#'+ link_id).show();
     }
     else{
-        console.log("Wrong! you entered: " + answer + " and the answer was: " + question.Anwser);
+        //console.log("Wrong! you entered: " + answer + " and the answer was: " + question.Anwser);
+
+        // if(!cookie_checking)
+        // {
+        //     var wrong = document.getElementById("wrong");
+        //     wrong.play() 
+        // }
+
     }
 }
-
-function resetCookie()
-{
-    document.cookie = "";
-    location.reload();
-};
 
 // When page finished to load: generate html + unlock question
 $(function(){
@@ -96,8 +146,31 @@ $(function(){
 
     // Unlock already answered question
     cookie.forEach(function checkCookie(element){
-        checkAnswer(element.GivenAnswer, element);
+        checkAnswer(element.GivenAnswer, element, true);
     });
 });
 
+
+// OnClick Method
+
+function resetCookie()
+{
+    document.cookie = "";
+    location.reload();
+}
+
+function lastValidation()
+{
+     var tentative = $('#final_answer').val().toLowerCase();
+
+     if(tentative == "the millennial whoop" || tentative == "millennial whoop")
+     {
+         var final = document.getElementById("final");
+         final.innerHTML = "Mot de passe de DP2: patato9876543210!"
+     }
+     else{
+        var wrong = document.getElementById("wrong");
+        wrong.play() 
+     }
+}
 
