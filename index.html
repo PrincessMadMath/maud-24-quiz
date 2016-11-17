@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle-Chanson 24 ans</title>
+
+  <link rel="stylesheet" href="css/combined.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+  <body>
+
+    <h1>Puzzle-Chansons 24 ans Maud!</h1>
+
+    <h3>But: Trouve ce qu'il y a en commun avec les chansons. Attention il y a des vidéos trolls!</h3>
+
+    <div id="plug" class="enigma-container"></div>
+
+   
+    <div id="final">
+       <span>Ce qu'il y a en commun: </span>
+      <input type="text" id="final_answer">
+      <button type="button" onclick="lastValidation()">Valider</button>
+    </div>
+
+
+     <button type="button" onclick="resetCookie()">Reset challenge</button>
+
+
+    <audio id="wrong" controls>
+        <source src="assets/audio/wrong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+	
+    
+    <script src="js/combined.js"></script>
+
+  </body>
+
+</html>
